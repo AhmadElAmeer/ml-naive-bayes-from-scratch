@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbspam"
+version = "0.1.0"
+description = "Multinomial and Bernoulli Naive Bayes spam filtering written from scratch"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Ahmad Kaiss"}]
+dependencies = []
+
+[project.optional-dependencies]
+# only for checking the from-scratch models against a reference implementation
+compare = ["scikit-learn>=1.2", "scipy"]
+test = ["pytest>=7", "scikit-learn>=1.2", "scipy"]
+
+[tool.setuptools]
+packages = ["nbspam"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
