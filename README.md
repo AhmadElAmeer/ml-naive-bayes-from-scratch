@@ -1,5 +1,7 @@
 # ml-naive-bayes-from-scratch
 
+[![CI](https://github.com/AhmadElAmeer/ml-naive-bayes-from-scratch/actions/workflows/ci.yml/badge.svg)](https://github.com/AhmadElAmeer/ml-naive-bayes-from-scratch/actions/workflows/ci.yml)
+
 A spam filter built from the Naive Bayes formulas, with no machine-learning library. It implements the multinomial and Bernoulli variants, the tokenizer, cross-validation and the metrics. It's trained on 5,574 real SMS messages, and **gives the same answers as scikit-learn to within 10⁻¹²**, which is the evidence that the maths is right.
 
 ```
